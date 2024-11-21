@@ -6,7 +6,13 @@
     <title>의미없는 페이지</title>
 </head>
 <body>
-    <h1>가나다라마바사</h1>
+    <h1 id="title">가나다라마바사</h1>
     <button>아무 일도 안일어남</button>
+    <script>
+        document.getElementsByTagName("button")[0].addEventListener("click",colorchange);
+        function colorchange(){
+            document.getElementById("title").style.color="violet";
+        }
+    </script>
 </body>
 </html>
